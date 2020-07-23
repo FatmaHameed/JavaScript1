@@ -7,3 +7,7 @@ function scoreToPercentage() {
   return (mark / fullMark) * 100;
 }
 console.log(`${scoreToPercentage(mark)}%`);
+//here I wrote another function that round the decimal to nearest value to be used with if statements, ex. 89.9 become: 90% and be grade A
+function roundPercentage() {
+  return Math.round((mark / fullMark) * 100);
+}
