@@ -7,7 +7,9 @@ myMealRecipes.ingredients = [
   '1/4 tsp salt and pepar',
   '5 cups of Oil',
   '1 sp katchup or myonize',
-]; // // Using for loop
+]; 
+
+// Using for loop
 console.log('Meal name:' + ' ' + myMealRecipes.title);
 console.log('Serves:' + ' ' + myMealRecipes.servings);
 console.log('Ingredients:');
