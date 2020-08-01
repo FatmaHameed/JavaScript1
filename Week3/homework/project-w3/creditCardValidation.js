@@ -6,9 +6,19 @@ function validateCreditNumber(creditNumber) {
     let chars = creditNumber.split('');
     let countChars = chars.length;
 
-    console.log(chars);
-    console.log(countChars);
+    // console.log(chars);
+    // console.log(countChars);
     return countChars;
+  }
+
+  //Write a function for checking that at least two different numbers should be represented
+  function testSameDigit(creditNumber) {
+    var first = creditNumber % 10;
+    while (creditNumber) {
+      if (creditNumber % 10 !== first) return false;
+      creditNumber = Math.floor(creditNumber / 10);
+    }
+    return true;
   }
 }
 
