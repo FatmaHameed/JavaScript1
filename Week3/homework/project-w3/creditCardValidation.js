@@ -21,7 +21,7 @@ function validateCreditNumber(creditNumber) {
   //write a function for last number must be even
 
   let lastDigit = creditNumber[creditNumber.length - 1];
-  // console.log('The last digit of ', creditNumber, ' is ', lastDigit);
+
   function checkEvenLastDigit(lastDigit) {
     if (lastDigit % 2 !== 0) {
       return false;
@@ -31,9 +31,8 @@ function validateCreditNumber(creditNumber) {
   // Write a function to check out the sum of all the numbers must be greater than 16
 
   let splitDigits = creditNumber.toString().split('').map(Number);
-  // console.log(splitDigits);
+
   let sumDigit = splitDigits.reduce((a, b) => a + b);
-  // console.log(sumDigit);
   function checkIfGreater(creditNumber) {
     if (sumDigit <= 16) {
       return false;
