@@ -17,6 +17,16 @@ function validateCreditNumber(creditNumber) {
     }
     return true;
   }
+
+  //write a function for last number must be even
+
+  let lastDigit = creditNumber[creditNumber.length - 1];
+  // console.log('The last digit of ', creditNumber, ' is ', lastDigit);
+  function checkEvenLastDigit(lastDigit) {
+    if (lastDigit % 2 !== 0) {
+      return false;
+    }
+  }
 }
 
 console.log(validateCreditNumber('6666666666661667'));
