@@ -1,6 +1,16 @@
 'use strict';
 // start with the function to validate the credit number
-function validateCreditNumber(creditNumber) {}
+function validateCreditNumber(creditNumber) {
+  //write a function for counting the number of digits to be equal to 16
+  function digitCount(creditNumber) {
+    let chars = creditNumber.split('');
+    let countChars = chars.length;
+
+    console.log(chars);
+    console.log(countChars);
+    return countChars;
+  }
+}
 
 console.log(validateCreditNumber('6666666666661667'));
 console.log(validateCreditNumber('4444444444444444'));
