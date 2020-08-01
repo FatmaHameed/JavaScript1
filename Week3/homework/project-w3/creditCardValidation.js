@@ -41,4 +41,9 @@ function validateCreditNumber(creditNumber) {
       return true;
     }
   }
+
+  // write a function for checking if all characters are numbers (using regular expression)
+  function isNumeric(creditNumber) {
+    return /^-{0,1}\d+$/.test(creditNumber);
+  }
 }
