@@ -10,12 +10,15 @@ function validateCreditNumber(creditNumber) {
 
   //Write a function for checking that at least two different numbers should be represented
   function testSameDigit(creditNumber) {
-    var first = creditNumber % 10;
-    while (creditNumber) {
-      if (creditNumber % 10 !== first) return false;
-      creditNumber = Math.floor(creditNumber / 10);
+    let uniqueNumbers = new Set(creditNumber); // create a new set of credit number to make sure it is unique
+    let uniqueNumbersArray = Array.from(new Set(uniqueNumbers)); //create array from the new set to ensure that the array length !=1
+
+    if (uniqueNumbersArray.length == 1) {
+      // if the array does not have more than one number, this means there is no different numbers in the array
+      return true;
+    } else {
+      return false;
     }
-    return true;
   }
 
   //write a function for last number must be even
