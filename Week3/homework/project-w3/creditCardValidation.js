@@ -5,9 +5,6 @@ function validateCreditNumber(creditNumber) {
   function digitCount(creditNumber) {
     let chars = creditNumber.split('');
     let countChars = chars.length;
-
-    // console.log(chars);
-    // console.log(countChars);
     return countChars;
   }
 
