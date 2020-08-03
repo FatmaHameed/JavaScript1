@@ -7,9 +7,6 @@ const countDrinkType = function (arr, val) {
     return val === elem ? acc + 1 : acc;
   }, 0);
 };
-// console.log(countDrinkType(drinkTypes, drinkTypes[0]));
-// console.log(countDrinkType(drinkTypes, drinkTypes[1]));
-// console.log(countDrinkType(drinkTypes, drinkTypes[2]));
 
 for (let i = 0; i < 5; i++) {
   for (let s = 0; s < drinkTypes.length; s++) {
@@ -22,5 +19,5 @@ for (let i = 0; i < 5; i++) {
     }
   }
 }
-// console.log(drinkTray);
+
 console.log(`"Hey guys, I brought a${drinkTray}!" `);
